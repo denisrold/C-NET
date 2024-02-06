@@ -21,3 +21,4 @@ packages/
 
 # Archivo de configuración específico de la máquina
 *.suo
+.vscode/

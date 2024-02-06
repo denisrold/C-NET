@@ -108,3 +108,53 @@ Console.WriteLine("First: " + value1);
 Console.WriteLine($"Second: {value1++}");
 Console.WriteLine("Third: " + value1);
 Console.WriteLine("Fourth: " + (++value1));
+
+//PROJECT 
+string studentName = "Sophia Johnson";
+string course1Name = "English 101";
+string course2Name = "Algebra 101";
+string course3Name = "Biology 101";
+string course4Name = "Computer Science I";
+string course5Name = "Psychology 101";
+
+int course1Credit = 3;
+int course2Credit = 3;
+int course3Credit = 4;
+int course4Credit = 4;
+int course5Credit = 3;
+
+int course1Grade = 4;
+int course2Grade = 3;
+int course3Grade = 3;
+int course4Grade = 3;
+int course5Grade = 4;
+
+int coursecross1 = course1Credit*course1Grade;
+int coursecross2 = course2Credit*course2Grade;
+int coursecross3 = course3Credit*course3Grade;
+int coursecross4 = course4Credit*course4Grade;
+int coursecross5 = course5Credit*course5Grade;
+
+int gradeSum = coursecross1+coursecross2+coursecross3+coursecross4+coursecross5;
+Console.Write($"gradeSumt: {gradeSum}\n\n");
+int creditSum = course1Credit+course2Credit+course3Credit+course4Credit+course5Credit;
+Console.Write($"CreditSum: {creditSum}\n\n");
+float finalScore = (float)gradeSum/ (float)creditSum;
+
+Console.Write($"Student: {studentName}\n\n");
+
+Console.WriteLine("Course\t\t\tGrade\tCredit Hours");
+Console.Write($"{course1Name}\t\t\t{course1Grade}\t{course1Credit}\n");
+Console.Write($"{course2Name}\t\t\t{course2Grade}\t{course2Credit}\n");
+Console.Write($"{course3Name}\t\t\t{course3Grade}\t{course3Credit}\n");
+Console.Write($"{course4Name}\t{course4Grade}\t{course4Credit}\n");
+Console.Write($"{course5Name}\t\t{course5Grade}\t{course5Credit}\n\n");
+Console.WriteLine($@"Final GPA:         {Math.Round(finalScore,2)}");
+
+//Conseguir los decimales sin mathRound
+int leadingDigit = (int)finalScore;
+int firstDigit = (int) (finalScore*10)%10;
+Console.WriteLine(firstDigit);
+int secondDigit = (int) (finalScore * 100 ) % 10;
+Console.WriteLine(secondDigit);
+Console.WriteLine($"Final GPA: {leadingDigit}.{firstDigit}{secondDigit}");

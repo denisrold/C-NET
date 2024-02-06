@@ -1,0 +1,23 @@
+# Carpeta bin generada por la compilación
+bin/
+
+# Carpeta obj generada por la compilación
+obj/
+
+# Carpeta de dependencias de NuGet
+packages/
+
+# Carpeta de caché de NuGet
+.vscode/
+
+# Carpeta de salida de compilación
+/bin/
+
+# Carpeta de salida de publicación
+/publish/
+
+# Archivos de configuración específicos del usuario
+*.user
+
+# Archivo de configuración específico de la máquina
+*.suo

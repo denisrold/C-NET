@@ -143,3 +143,24 @@ for(int i = 1; i <=100;i++){
     else
         Console.WriteLine($"{i}");
 }
+int count = 0;
+do{
+    Console.WriteLine("Hola");
+    count++;}
+while(count<3);
+
+Random dice  = new Random();
+int azar = 0;
+do{
+  azar =  dice.Next(1,10);  
+  if(azar == 7|| azar==8) continue;
+  Console.WriteLine(azar);}
+
+while(azar != 4);
+
+  while (azar >=4)
+{
+  azar =  dice.Next(1,10);
+  if(azar == 7|| azar==8) continue;
+  Console.WriteLine("Wep");
+}

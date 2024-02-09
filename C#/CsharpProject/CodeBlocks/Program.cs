@@ -164,3 +164,4 @@ while(azar != 4);
   if(azar == 7|| azar==8) continue;
   Console.WriteLine("Wep");
 }
+

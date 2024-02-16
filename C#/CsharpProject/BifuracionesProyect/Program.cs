@@ -125,12 +125,20 @@ do
     {
         menuSelection = readResult.ToLower();
     }
+    else{
+
+    }
 
     switch(menuSelection)
     {
         case "1":
-        Console.WriteLine("this app feature is coming soon - please check back to see progress.");
-        Console.WriteLine("Press the Enter key to continue.");
+        // List all of our current pet information
+        for(int i =0; i < maxPets ; i++){
+            if(ourAnimals[i,0] != "ID #: "){
+                Console.WriteLine(ourAnimals[i,0]);
+            }
+        }
+        Console.WriteLine("Press the Enter key to continue");
         readResult = Console.ReadLine();
         break;
         case "2":
@@ -167,5 +175,6 @@ do
         break;
         default:break;
     }
+
 }
 while (menuSelection != "exit");
